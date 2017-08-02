@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './Home.css';
-import Circle from './Circle.js';
 
 class Home extends Component {
   render() {
     return (
       <div className="Home">
         <div className="Home-image">
-          <img src={require('./profpic.jpg')} />
+          <img src={require('./profpic.jpg')} alt="profile pic" />
         </div>
         <div className="Home-about">
           <div className="Home-about-header">Hello,

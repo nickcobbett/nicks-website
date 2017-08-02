@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Home from './Home.js';
 import Resume from './Resume.js';
@@ -29,7 +28,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log(this.state)
+    // console.log(this.state)
   }
 
   render() {
@@ -85,6 +84,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-{/**/}
