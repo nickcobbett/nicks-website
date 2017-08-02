@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Home from './Home.js';
-// var classNames = require('classnames');
+import Resume from './Resume.js';
+import Projects from './Projects.js';
+import Contact from './Contact.js';
 import classNames from 'classnames';
 
 class App extends Component {
@@ -11,10 +13,7 @@ class App extends Component {
     super(props);
     this.state = {
       currentPage: {
-        home: true,
-        resume: false,
-        projects: false,
-        contact: false
+        home: true
       }
     };
     this.handleNavItemClick = this.handleNavItemClick.bind(this);
@@ -27,6 +26,10 @@ class App extends Component {
         [`${location}`]: true
       }
     });
+  }
+
+  componentDidMount() {
+    console.log(this.state)
   }
 
   render() {
@@ -69,7 +72,13 @@ class App extends Component {
             <div className={navItemClasses.contact} onClick={this.handleNavItemClick}>Contact</div>
           </div>
         </div>
-        <Home className="Home"/>
+        {
+          this.state.currentPage.home ? <Home className="Home"/> :
+          this.state.currentPage.resume ? <Resume className="Resume"/> :
+          this.state.currentPage.projects ? <Projects className="Projects" /> :
+          this.state.currentPage.contact ? <Contact className="Contact" /> : null
+        }
+
       </div>
     );
   }
