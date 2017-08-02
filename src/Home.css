@@ -57,26 +57,27 @@ div[class^="button"]:hover {
   /*transition: border 0.4s ease 0s, background-color 0.4s ease 0s;*/
 }
 
-div[class*="button-resume"] {
+.button.resume {
   background-color: rgba(232, 53, 86, 1);
 }
 
-div[class*="portfolio"] {
+.button.projects {
   background-color: #61d0d4;
 }
 
-div[class*="skills"] {
+.button.contact {
   background-color: #d1c926;
 }
 
-div[class*="button-resume"]:hover {
+.button.resume:hover {
   background-color: #b1112e;
+  /*background-color: #8e0d25;*/
 }
 
-div[class*="portfolio"]:hover {
+.button.projects:hover {
   background-color: rgba(65, 139, 141, 1);
 }
 
-div[class*="skills"]:hover {
+.button.contact:hover {
   background-color: rgba(139, 134, 25, 1);
 }

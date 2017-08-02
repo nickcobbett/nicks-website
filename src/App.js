@@ -62,7 +62,7 @@ class App extends Component {
         <div className="App-header">
           <div className="name-title">
             <div className="name">Nick Cobbett</div>
-            <div className="title">Unemployed Software Engineer</div>
+            <div className="title">Failed Musician/ Software Engineer</div>
           </div>
           <div className="App-Navbar">
             <div className={navItemClasses.home} onClick={this.handleNavItemClick}>Home</div>
