@@ -1,0 +1,10 @@
+{
+  "headers": {
+    "/": {
+      "Cache-Control": "public, no-cache"
+    },
+    "/public/**": {
+      "Cache-Control": "public, max-age=60"
+    }
+  }
+}
