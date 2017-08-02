@@ -62,7 +62,7 @@ class App extends Component {
         <div className="App-header">
           <div className="name-title">
             <div className="name">Nick Cobbett</div>
-            <div className="title">Failed Musician/Unemployed</div>
+            <div className="title">Unemployed Software Engineer</div>
           </div>
           <div className="App-Navbar">
             <div className={navItemClasses.home} onClick={this.handleNavItemClick}>Home</div>
@@ -72,7 +72,7 @@ class App extends Component {
           </div>
         </div>
         {
-          this.state.currentPage.home ? <Home className="Home"/> :
+          this.state.currentPage.home ? <Home className="Home" handleButtonClick={this.handleNavItemClick}/> :
           this.state.currentPage.resume ? <Resume className="Resume"/> :
           this.state.currentPage.projects ? <Projects className="Projects" /> :
           this.state.currentPage.contact ? <Contact className="Contact" /> : null

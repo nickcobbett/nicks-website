@@ -7,6 +7,7 @@ class Projects extends Component {
       <div className="Projects">
         <div className="header">Projects</div>
         <div className="line"></div>
+        <div>projects coming soon!</div>
       </div>
     )
   }
