@@ -1,7 +1,7 @@
 {
   "headers": {
     "/": {
-      "Cache-Control": "public, no-cache"
+      "Cache-Control": "public"
     },
     "/public/**": {
       "Cache-Control": "public, max-age=60"
