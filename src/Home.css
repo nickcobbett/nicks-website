@@ -1,0 +1,31 @@
+.Home {
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home-image {
+  flex: 1;
+}
+
+img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.Home-about {
+  flex: 1;
+}
+.Home-about-header {
+  font-size: 3em;
+}
+
+.Home-about-subheader {
+  font-size: 14px;
+}
+
+.Home-about-buttons {
+  display: flex;
+}
