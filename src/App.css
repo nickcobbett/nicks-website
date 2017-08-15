@@ -1,17 +1,24 @@
 .App {
+  /*width: 100%;*/
+  /*align-self: stretch;*/
+  /*flex: 1;*/
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 0 50px;
+  align-items: stretch;
+  /*margin: 30px 0 0 50px;*/
+  /*max-width: 100%;*/
+  /*border: 1px dashed green;*/
 }
 
 .App-header {
-  width: 80%;
+  /*max-width: 100%;*/
+  /*border: 1px dashed black;*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 50px;
+  align-items: stretch;
+  /*margin-top: 50px;*/
   margin-bottom: 100px;
 }
 
@@ -38,6 +45,7 @@
 }
 
 .name-title {
+  flex: 1;
   margin-right: 20px;
   display: flex;
   flex-direction: column;
@@ -47,6 +55,11 @@
 .name {
   font-size: 43px;
   font-weight: bold;
+}
+
+.initials {
+  display: none;
+  font-size: 34px;
 }
 
 .title {
@@ -62,21 +75,56 @@
   color: #61D0D4;
 }
 
+.drawer {
+  display: none;
+}
+
+.drawer {
+  display: none;
+}
+
+@media only screen and (max-width: 302px) {
+  .name {
+    display: none;
+  }
+
+  .initials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+  .name {
+    font-size: 25px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .App {
-    width: 100%;
-    text-align: left;
-    margin: 10px 20px;
+    /*width: 100%;*/
+    /*text-align: left;*/
+    /*margin: 10px 20px;*/
   }
 
   .App-header {
-    width: 100vw;
-    margin-top: 0;
+    /*width: 100vw;*/
+    /*margin-top: 0;*/
     margin-bottom: 15px;
   }
 
   .App-NavBar {
-    display: none;
+    /*display: none;*/
   }
 
   .name {
@@ -86,5 +134,16 @@
 
   .NavItem {
     display: none;
+  }
+
+  .drawer {
+    /*flex: 0;*/
+    display: flex;
+    /*align-self: flex-end;*/
+    width: 65px;
+    /*height: 100%;*/
+    background-color: #4d4d4d;
+    justify-content: center;
+    align-items: center;
   }
 }

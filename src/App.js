@@ -12,7 +12,7 @@ class App extends Component {
     super(props);
     this.state = {
       currentPage: {
-        home: true
+        // home: true
       }
     };
     this.handleNavItemClick = this.handleNavItemClick.bind(this);
@@ -62,6 +62,7 @@ class App extends Component {
         <div className="App-header">
           <div className="name-title">
             <div className="name">Nick Cobbett</div>
+            <div className="initials">NC</div>
             <div className="title">Failed Musician/ Software Engineer</div>
           </div>
           <div className="drawer">
