@@ -67,22 +67,27 @@ class App extends Component {
       )
     }
     return (
-      <Navbar collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <a href="#">Todd Toddson</a>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav activeKey={this.state.activePage} pullRight onSelect={this.handleNavItemClick}>
-            <NavItem eventKey={1} href="/home">Home</NavItem>
-            <NavItem eventKey={2} href="/projects">Projects</NavItem>
-            <NavItem eventKey={3} href="/resume">Resume</NavItem>
-            <NavItem eventKey={4} href="/contact">Contact</NavItem>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+      <div>
+        <Navbar collapseOnSelect>
+          <Navbar.Header>
+            <Navbar.Brand>
+              <a href="#">Todd Toddson</a>
+            </Navbar.Brand>
+            <Navbar.Toggle />
+          </Navbar.Header>
+          <Navbar.Collapse>
+            <Nav activeKey={this.state.activePage} pullRight onSelect={this.handleNavItemClick}>
+              <NavItem eventKey={1} href="/home">Home</NavItem>
+              <NavItem eventKey={2} href="/projects">Projects</NavItem>
+              <NavItem eventKey={3} href="/resume">Resume</NavItem>
+              <NavItem eventKey={4} href="/contact">Contact</NavItem>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+        <div className="container">
+          {this.props.children}
+        </div>
+      </div>
     );
   }
 }
