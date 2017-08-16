@@ -24,7 +24,7 @@ class NavBar extends Component {
               <LinkContainer to="/resume">
                 <NavItem eventKey={3}>Resume</NavItem>
               </LinkContainer>
-              <LinkContainer  to="/contact">
+              <LinkContainer to="/contact">
                 <NavItem eventKey={4}>Contact</NavItem>
               </LinkContainer>
             </Nav>
