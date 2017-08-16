@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Nav, Navbar, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Nav, Navbar, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 class NavBar extends Component {
@@ -9,7 +9,7 @@ class NavBar extends Component {
         <Navbar collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">Nick Cobbett</a>
+              <a href="/">Nick Cobbett</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -30,10 +30,6 @@ class NavBar extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <div className="container">
-          {/*Mount child routes*/}
-          {this.props.children}
-        </div>
       </div>
     );
   }
