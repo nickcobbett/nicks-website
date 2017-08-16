@@ -6,6 +6,11 @@ import Projects from './Projects.js';
 import Contact from './Contact.js';
 import classNames from 'classnames';
 import { Nav, Navbar, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
 class App extends Component {
 
@@ -13,19 +18,24 @@ class App extends Component {
     super(props);
     this.state = {
       currentPage: {
-        // home: true
-      }
+
+      },
+      activePage: 1
     };
     this.handleNavItemClick = this.handleNavItemClick.bind(this);
   }
 
-  handleNavItemClick(e) {
-    let location = e.target.classList[1];
-    this.setState({
-      currentPage: {
-        [`${location}`]: true
-      }
-    });
+  // handleNavItemClick(e) {
+  //   let location = e.target.classList[1];
+  //   this.setState({
+  //     currentPage: {
+  //       [`${location}`]: true
+  //     }
+  //   });
+  // }
+
+  handleNavItemClick(key) {
+    this.setState({activePage: key});
   }
 
   componentDidMount() {
@@ -65,11 +75,11 @@ class App extends Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav pullRight>
-            <NavItem eventKey={1} href="#home">Home</NavItem>
-            <NavItem eventKey={2} href="#projects">Projects</NavItem>
-            <NavItem eventKey={3} href="#resume">Resume</NavItem>
-            <NavItem eventKey={4} href="#contact">Contact</NavItem>
+          <Nav activeKey={this.state.activePage} pullRight onSelect={this.handleNavItemClick}>
+            <NavItem eventKey={1} href="/home">Home</NavItem>
+            <NavItem eventKey={2} href="/projects">Projects</NavItem>
+            <NavItem eventKey={3} href="/resume">Resume</NavItem>
+            <NavItem eventKey={4} href="/contact">Contact</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
