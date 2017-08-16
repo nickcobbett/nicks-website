@@ -23,8 +23,8 @@ class Home extends Component {
 
     return (
       <div className="Home">
-        <div className="Home-image">
-          <img src={require('./profpic.jpg')} alt="profile pic" />
+        <div className="Home-image-wide">
+        <img src={require('./profpic-square.png')} alt="profile pic" />
         </div>
         <div className="Home-about">
           <div className="Home-about-header">Hello,
@@ -41,7 +41,10 @@ class Home extends Component {
               <div>Contact</div>
             </LinkContainer>
           </div>
-          <div className="Home-about-summary-wide">Here's some words about how I'm a self starter, motivated by highly performant technologies, looking for a team that can both challenge and elevate me to the highest level. Sports metaphors are good. War metaphors are better. Actually most sports metaphors are war metaphors. We speak of wounded teammates and putting the team on our back, and going to battle for what matters, in the trenches...
+          <div className="Home-image-small">
+            <img src={require('./profpic-square.png')} alt="profile pic" />
+          </div>
+          <div className="Home-about-summary">Here's some words about how I'm a self starter, motivated by highly performant technologies, looking for a team that can both challenge and elevate me to the highest level. Sports metaphors are good. War metaphors are better. Actually most sports metaphors are war metaphors. We speak of wounded teammates and putting the team on our back, and going to battle for what matters, in the trenches...
           </div>
         </div>
       </div>
