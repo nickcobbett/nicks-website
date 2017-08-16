@@ -92,16 +92,6 @@ img {
   display: none;
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-/* Styles */
-}
-
-@media only screen and (max-width: 768px) {
-
-}
-
-
 @media only screen and (max-width: 700px) {
   .Home {
     flex-direction: column;
@@ -110,7 +100,7 @@ img {
   }
 
   .Home-about {
-    /*max-width: 80%;*/
+    margin: 0;
   }
 
   .Home-about-header {
@@ -128,18 +118,15 @@ img {
 
   .Home-image-small {
     flex: 1 1 auto;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 330px;
+    max-height: 330px;
     align-self: center;
     margin-bottom: 20px;
     display: flex;
   }
 
   .Home-about-buttons {
-    /*max-width: 400px;*/
     align-self: stretch;
-    /*justify-content: space-between;*/
-    /*align-items: space-between;*/
   }
 
   .button {
