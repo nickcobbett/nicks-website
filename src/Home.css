@@ -40,6 +40,7 @@ img {
   flex: 1;
   align-self: stretch;
   display: flex;
+  -webkit-flex: 0;
   justify-content: space-between;
   margin: 30px 0;
 }
