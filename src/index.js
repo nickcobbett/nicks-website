@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch, HashRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Home from './Home';
@@ -9,7 +9,7 @@ import Resume from './Resume';
 import Contact from './Contact';
 
 ReactDOM.render((
-    <Router>
+    <HashRouter>
       <Switch>
         <Route component={App}>
           <Route path="/" component={Home}/>
@@ -18,6 +18,6 @@ ReactDOM.render((
           <Route path="/contact" component={Contact}/>
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
 ), document.getElementById('root'));
 
