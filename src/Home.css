@@ -54,6 +54,7 @@ img {
   text-transform: uppercase;
   font-family: sans-serif;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .button:hover {
