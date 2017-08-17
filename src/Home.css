@@ -9,19 +9,17 @@
 
 .Home-image-wide {
     flex: 1 1 auto;
-    /*max-height: 350px;*/
     max-width: 350px;
     min-width: 300px;
-    /*min-height:*/
 }
 
 img {
   border-radius: 50%;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .Home-about {
-  /*flex: 1 1 auto;*/
   max-width: 450px;
   margin-left: 10px;
   display: flex;
@@ -37,16 +35,15 @@ img {
 }
 
 .Home-about-buttons {
-  flex: 1;
+  flex: 0 0 auto;
   align-self: stretch;
   display: flex;
-  -webkit-flex: 0;
+  -webkit-flex: 0 0 auto;
   justify-content: space-between;
   margin: 30px 0;
 }
 
 .button {
-  /*flex: 1;*/
   width: 125px;
   height: 125px;
   border-radius: 50%;
@@ -98,6 +95,7 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    min-width: 300px;
   }
 
   .Home-about {
@@ -118,12 +116,11 @@ img {
   }
 
   .Home-image-small {
-    flex: 1 1 auto;
+    display: flex;
     max-width: 330px;
     max-height: 330px;
     align-self: center;
     margin-bottom: 20px;
-    display: flex;
   }
 
   .Home-about-buttons {
