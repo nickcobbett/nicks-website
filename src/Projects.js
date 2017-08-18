@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Grid, Carousel, Image, Col} from 'react-bootstrap';
+import {Grid, Carousel} from 'react-bootstrap';
 import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 import './Projects.css';
 
