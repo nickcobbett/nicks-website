@@ -25,10 +25,10 @@ class Projects extends Component {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img alt="900x500" src={require("./assets/race-with-friends.png")}/>
+              <img alt="900x500" src={require("./assets/filmedin.png")}/>
               <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>FilmedIn</h3>
+                <p>A social network for film buffs</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
