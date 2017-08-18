@@ -16,7 +16,7 @@ class NavBar extends Component {
           <Navbar.Collapse>
             <Nav activeKey={1} pullRight >
               <LinkContainer to="/home">
-                <NavItem eventKey={1}>Home</NavItem>
+                <NavItem style={{backgroundColor: 'black'}} eventKey={1}>Home</NavItem>
               </LinkContainer>
               <LinkContainer to="/projects">
                 <NavItem eventKey={2}>Projects</NavItem>

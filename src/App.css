@@ -53,8 +53,8 @@
   color: #61D0D4;
 }
 
-.drawer {
-  display: none;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: #eae5e5;
 }
 
 @media only screen and (max-width: 302px) {
@@ -97,27 +97,9 @@
     margin-bottom: 15px;
   }
 
-  .App-NavBar {
-    /*display: none;*/
-  }
-
   .name {
     /*font: normal normal normal 80px/1.2em 'noticia text',serif;*/
     font-size: 30px;
   }
 
-  .NavItem {
-    display: none;
-  }
-
-  .drawer {
-    /*flex: 0;*/
-    display: flex;
-    /*align-self: flex-end;*/
-    width: 65px;
-    /*height: 100%;*/
-    background-color: #4d4d4d;
-    justify-content: center;
-    align-items: center;
-  }
 }
