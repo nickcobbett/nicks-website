@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Grid, Col} from 'react-bootstrap';
 import './Contact.css';
-import Mailto from 'react-mailto';
 
 class Contact extends Component {
   render() {

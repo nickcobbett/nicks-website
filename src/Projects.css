@@ -13,10 +13,6 @@
   max-width: 50%;
 }
 
-.small-caption {
-  display: none;
-}
-
 @media only screen and (max-width: 530px) {
   .carousel-caption p {
     font-size: 12px;
@@ -26,5 +22,9 @@
 @media only screen and (max-width: 450px) {
   .carousel-caption p {
     display: none;
+  }
+
+  .carousel-caption h3 {
+    max-width: 50%;
   }
 }
