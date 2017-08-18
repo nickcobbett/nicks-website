@@ -12,14 +12,19 @@
 .carousel-caption p {
   max-width: 50%;
 }
-/*
-.header {
-  text-transform: uppercase;
-  font: normal normal normal 80px/1.2em 'noticia text',serif;
+
+.small-caption {
+  display: none;
 }
 
-.line {
-  border-top: .5px solid #8b8b8b;
-  width: 80%;
-  margin: 30px 0 20px 0;
-}*/
+@media only screen and (max-width: 530px) {
+  .carousel-caption p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .carousel-caption p {
+    display: none;
+  }
+}

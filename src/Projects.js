@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import {Grid, Carousel} from 'react-bootstrap';
-import { bootstrapUtils } from 'react-bootstrap/lib/utils';
+// import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 import './Projects.css';
 
 
-bootstrapUtils.addStyle(Carousel.Caption, 'left');
+// bootstrapUtils.addStyle(Carousel.Caption, 'left');
 
 class Projects extends Component {
-
 
   render() {
     return (
