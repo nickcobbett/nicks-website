@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import {Grid, Carousel} from 'react-bootstrap';
-// import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 import './Projects.css';
 
-
-// bootstrapUtils.addStyle(Carousel.Caption, 'left');
 
 class Projects extends Component {
 
@@ -28,13 +25,6 @@ class Projects extends Component {
               <Carousel.Caption>
                 <h3>FilmedIn</h3>
                 <p>A social network for film buffs</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img alt="900x500" src={require("./assets/race-with-friends.png")}/>
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
