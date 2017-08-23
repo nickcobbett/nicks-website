@@ -10,7 +10,7 @@ class Resume extends Component {
           <div className="Resume">
             <div className="header">Resume</div>
             <div className="line"></div>
-            <div>You know the Seattle Seven? That was me... and six other guys.</div>
+            <div>Please send me an email for a copy of my latest resume, or just have a look at some of my projects!</div>
           </div>
         </Grid>
       </div>
