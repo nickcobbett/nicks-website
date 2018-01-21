@@ -47,7 +47,7 @@ class Home extends Component {
               <div className="Home-image-small">
                 <img src={require('./assets/profpic-small.jpg')} alt="profile pic" />
               </div>
-              <div className="Home-about-summary">I'm a web developer out of Oakland, CA. I'm a big fan of React and React-Native on the front end, and Node and MySQL on the back end. Take a look at some of the projects I've worked on and please say hello!
+              <div className="Home-about-summary">I'm a full stack engineer based in Oakland, CA. Lately I've been enjoying working with React and React-Native. Take a look at some of the projects I've worked on and please say hello!
               </div>
             </div>
           </div>
